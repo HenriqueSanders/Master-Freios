@@ -2,6 +2,11 @@
     padding: 0;
     margin: 0;
 }
+main{
+    width: 1280px;
+    height: 100%;
+    margin: 0 auto;
+}
 
 body{
     background: url(cam.png) no-repeat fixed;
@@ -15,12 +20,24 @@ header{
 
 footer{
     position: absolute;
-    bottom: 0;
     width: 100%;
     background-color: rgb(219, 25, 25);
     height: 150px;
 }
-
+.logo{
+    margin-top: 1%;
+    width: 23%;
+}
+.menu{
+    width: 300px;
+    float:right;
+    margin-top:4.5%;    
+}
+.menu a{
+    margin-right: 10%;
+    text-decoration: none;
+    color: gray;
+}
 .logowpp{
     position: fixed;
     z-index: 1;
