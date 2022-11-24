@@ -3,13 +3,15 @@
     padding: 0;
     margin: 0;
     max-width: 100% ;
+    text-decoration: none;
+    color: #000000;
 }
 main{
     width: 1280px;
     margin: 0 auto;
 }
 body{
-    height: 100%;
+    height: 100vh;
 }
 
 
@@ -20,18 +22,17 @@ header{
 }
 
 footer{
-    position: absolute;
     width: 100%;
     background-color: #3c1364;
     height: 150px;
-    bottom: 100vh;
+    bottom: 0;
 }
 .f2{
     position: absolute;
     width: 100%;
     background-color: #3c1364;
     height: 150px;
-    bottom: 0px;
+    bottom: 0;
 }
 .logo{
     padding-top: 1%;
@@ -43,7 +44,7 @@ footer{
 .menu{
     width: 500px;
     margin: 0 auto;
-    padding-top: 1.3%;
+    padding-top: 1%;
  
 }
 .menu a{
@@ -62,21 +63,27 @@ footer{
 
 footer{
     bottom: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
-footer>div{
-    font-size: 20px;
-    padding: 50px;
-}
 .info-footer{
-    margin-top: 2%;
     text-align: center;
 }
+.info-footer p{
+    max-width: 900px;
+    margin: 0px;
+    padding: 0px;
+}
 .logo-footer{
-    margin-top: 1.2%;
-    float: left;
     width: 120px;
-    box-shadow: 0 0 1rem;
+}
+
+.footer-map{
+    width: 70px;
+    font-size: 12px;
+
 }
 
 .iframe-loc{
@@ -87,4 +94,22 @@ footer>div{
     margin-top: 2%;
     margin-bottom: 2%;
 }
-
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-column-gap: 10px;
+    grid-gap: 20px;
+}
+.peca{
+    display: -ms-inline-grid;
+    width: 300px;
+    padding-top: 7px;
+    text-align: center;
+    border: 0.1cm black;
+    border-style:solid;
+    border-radius: 20px;
+    box-shadow: 0 0 1rem;
+}
+.sobre{
+    padding: 5%;
+}
