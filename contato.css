@@ -101,3 +101,14 @@ form button:hover{
 .btn:hover{
     border-radius: 16px;
 }
+
+@media screen and (max-width: 610px){
+    section{
+        width: 300px;
+    }
+}
+@media screen and (max-width: 415px){
+    section{
+        width: 280px;
+    }
+}

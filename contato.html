@@ -9,24 +9,24 @@
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="contato.css">
     <link rel="shortcut icon" href="icone.png" type="image/x-icon">
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
 </head>
 
 <body>
-    <div class="logo">
-
-        <a href="index.html"><img src="Logo.png"></a>
-    
+    <header>
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="Logo.png"></a></div>
+            <div class="hamburguer active"></div>
+            <ul class="menu active">
+                <li><a href="pecas.html">Peças</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+            </ul>     
         </div>
-    
-        <header>
-            <div class="menu">
-                <a href="pecas.html">Peças</a>
-                <a href="sobre.html">Sobre nós</a>
-                <a href="contato.html">Contato</a>
-                <a href="localizacao.html">Localização</a>            
-            </div>
-        </header>
+    </header> 
+
+    <div style="margin-top: 160px;"></div>
 
     <section>
         <h2>Contato</h2>
@@ -62,6 +62,7 @@
             <a href="localizacao.html">Veja nossa localização</a>
         </div>
     </footer>
+    <script src="main.js"></script>
 </body>
 
 </html>

@@ -8,80 +8,39 @@
     <title>Master Freios</title>
     <link rel="stylesheet" href="style.css">
     <link rel="shortcut icon" href="icone.png" type="image/x-icon">
-    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+    
 </head>
 
 <body>
-    <div class="logo">
-
-    <a href="index.html"><img src="Logo.png"></a>
-
-    </div>
-
     <header>
-        <div class="menu">
-            <a href="pecas.html">Peças</a>
-            <a href="sobre.html">Sobre nós</a>
-            <a href="contato.html">Contato</a>
-            <a href="localizacao.html">Localização</a>          
+        <div class="navbar">
+            <div class="logo"><a href="index.html"><img src="Logo.png"></a></div>
+            <div class="hamburguer active"></div>
+            <ul class="menu active">
+                <li><a href="pecas.html">Peças</a></li>
+                <li><a href="sobre.html">Sobre nós</a></li>
+                <li><a href="contato.html">Contato</a></li>
+                <li><a href="localizacao.html">Localização</a></li>
+            </ul>     
         </div>
     </header>
 
-    
-    <img src="banner2.png">
-
-
+    <div class="banner"><img src="banner2.png"></div>    
     
 
-    <main>
-        <h1>Peças</h1>
-        <div class="grid">
-            <div class="peca">
-                <img src="produto1.jpg" >
-                <p>Valvula APU knorr</p>
-            </div>
-            <div class="peca">
-                <img src="produto2.jpg">
-                <p>Valvula 6 vias</p>
-            </div>
-            <div class="peca">
-                <img src="produto3.png">
-                <p>Compressor de ar</p>
-            </div>
-            <div class="peca">
-                <img src="produto4.jpg">
-                <p>Valvula 4 vias</p>
-            </div>
-            <div class="peca">
-                <img src="produto5.jpg">
-                <p>Servo de embreagem</p>
-            </div>
-            <div class="peca">
-                <img src="produto6.png">
-                <p>Valvula de pedal</p>
-            </div>
-            <div class="peca">
-                <img src="produto7.jpg">
-                <p>Cuica de freio</p>
-            </div>
-            <div class="peca">
-                <img src="produto8.jpg">
-                <p>Manequim de freio</p>
-            </div>
-        </div>
-            
-    </main>
 
-
-
-
-
-
-
-
-
-
-
+    
+        <section class="container">
+            <div class="item"><img src="produto1.jpg"><p>Valvula APU knorr</p></div>
+            <div class="item"><img src="produto2.jpg"><p>Valvula 6 vias</p></div>
+            <div class="item"><img src="produto3.png"><p>Compressor de ar</p></div>
+            <div class="item"><img src="produto4.jpg"><p>Valvula 4 vias</p></div>
+            <div class="item"><img src="produto5.jpg"><p>Servo de embreagem</p></div>
+            <div class="item"><img src="produto6.png"><p>Valvula de pedal</p></div>
+            <div class="item"><img src="produto7.jpg"><p>Cuica de freio</p></div>
+            <div class="item"><img src="produto8.jpg"><p>Manequim de freio</p></div>
+        </section>
 
     <a class="logowpp" href="http://wa.me/5519989547308" target="_blank"><img src="logo.wpp.png" width="60px"></a>
 
@@ -102,6 +61,10 @@
         </div>
     </footer>
 
+
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
