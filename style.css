@@ -37,33 +37,59 @@ header{
 }
 
 .hamburguer{
-    width: 30px;
-    height: 30px;
-    background-color: transparent;
-    border-radius: 5px;
-    cursor: pointer;
+    padding-right: 20px;
+}
+
+.menu-button-container {
     display: none;
-}
-.hamburguer::after{
-    content: "";
-    position: absolute;
-    top: 44%;
-    right: 15%;
-    width: 4%;
-    height: 2%;
-    border-radius: 5px;
+    height: 100%;
+    width: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  .menu-button,
+  .menu-button::before,
+  .menu-button::after {
+    display: block;
     background-color: #fff;
-}
-.hamburguer::before{
-    content: "";
     position: absolute;
-    top: 47%;
-    right: 15%;
-    width: 4%;
-    height: 2%;
-    border-radius: 5px;
-    background-color: #fff;
-}
+    height: 4px;
+    width: 30px;
+    transition: transform 400ms cubic-bezier(0.23, 1, 0.32, 1);
+    border-radius: 2px;
+  }
+  
+  .menu-button::before {
+    content: '';
+    margin-top: -8px;
+  }
+  
+  .menu-button::after {
+    content: '';
+    margin-top: 8px;
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::before {
+    margin-top: 0px;
+    transform: rotate(405deg);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button {
+    background: rgba(255, 255, 255, 0);
+  }
+  
+  #menu-toggle:checked + .menu-button-container .menu-button::after {
+    margin-top: 0px;
+    transform: rotate(-405deg);
+  }
+
 .menu{
     list-style: none;
     display: flex;
@@ -178,6 +204,9 @@ footer{
     }
 }
 @media screen and (max-width: 980px){
+    .menu-button-container {
+        display: flex;
+    }
     .hamburguer{
         display: block;
         z-index: 999;
@@ -217,7 +246,15 @@ footer{
         width: 50px;
         font-size: 9px;
     }
-
+    .footer-map{
+        display: none;
+    }
+    footer > p,a,span{
+        font-size: 20px;
+    }
+    .banner{
+        display: none;
+    }
 }
 
 @media screen and (max-width: 700px){
@@ -295,25 +332,3 @@ footer{
         padding: 5px;
     }
 }
-
-/* @media screen and (max-width:400px) {
-    footer{
-        display:block;
-        height: 300px;
-    }
-    .info-footer{
-        font-size: 14px;
-    }
-    .footer-map{
-        padding-top: 15px;
-        margin: 0 auto;
-    }
-    .logo-footer{
-        width: 50px;
-        margin: 0 auto;
-        text-align: center;
-        padding: 20px;
-        margin-left: 150px;
-    }
-}
- */
