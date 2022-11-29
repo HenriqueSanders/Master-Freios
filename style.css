@@ -21,6 +21,7 @@ header{
     position: fixed;
     top: 0;
     z-index: 999;
+    box-shadow: 0 0 10px;
 }
 .navbar{
     max-width: 1200px;
@@ -30,9 +31,11 @@ header{
     align-items: center;
     justify-content: space-between;
 }
+
 .logo{
  width: 150px;
 }
+
 .hamburguer{
     width: 30px;
     height: 30px;
@@ -73,11 +76,11 @@ header{
 .menu li>a{
     display: block;
     padding: 10px 15px;
-    color: #555;
+    color: #fff;
     transition: .5s ease;
 }
 .menu li>a:hover{
-    color: #fff;
+    color: #555;
 }
 .container{
     max-width: 1200px;
@@ -85,6 +88,7 @@ header{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-gap: 20px;
+    padding: 20px 0 20px 0;
 }
 .item img{
     border: 0.5px solid;
@@ -97,9 +101,9 @@ header{
     min-width: 200px;
     height: 300px;
     text-align: center;
-    border: 2px solid;
+    border: 2px solid gray;
     border-radius: 10px;
-    box-shadow: 0 0 1rem;
+    box-shadow: 0 0 2px;
 }
 .item p{
     padding-top: 20px;
@@ -116,6 +120,7 @@ footer{
     align-items: center;
     justify-content: space-around;
 }
+
 .f2{
     position: absolute;
     width: 100%;
@@ -133,6 +138,12 @@ footer{
 .info-footer{
     text-align: center;
 }
+
+.info-footer>p,a,span{
+    font-size: 18px;
+    color: #fff;
+}
+
 .logo-footer{
     width: 120px;
 }
@@ -154,8 +165,11 @@ footer{
 }
 .sobre{
     margin-top: 170px;
-    margin-bottom: 262px;
+    margin-bottom: 20px;
     padding: 20px;
+}
+.sobre>p{
+    font-size: 20px;
 }
 
 @media screen and (max-width: 1240px) {
@@ -215,9 +229,19 @@ footer{
     }
 }
 @media screen and (max-width: 450px){
+    .logo>a>img{
+        height: 100px;
+    }
+    header{
+        height: 100px;
+    }
+    .banner{
+        display: none;
+    }
     .container{
         grid-template-columns: 1fr;
         margin-left: 50px;
+        padding-top: 150px;
     }
     .iframe-loc iframe{
         width: 350px;
