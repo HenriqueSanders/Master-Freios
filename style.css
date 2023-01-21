@@ -16,15 +16,16 @@ h1{
     text-align: center;
     padding: 20px 0 20px 0;
     color: #fff;
-    background-color: #471875;
+    background-color: #192fac;
 }
 main{
     width: 1280px;
     margin: 0 auto;
+    display: flex;
 }
 header{
     width: 100%;
-    background-color: #3c1364;
+    background-color: #192fac;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -110,11 +111,11 @@ header{
 .menu li>a{
     display: block;
     padding: 10px 15px;
-    color: #fff;
+    color: rgb(255, 253, 253);
     transition: .5s ease;
 }
 .menu li>a:hover{
-    color: #555;
+    color: rgb(0, 0, 0);
 }
 .container{
     max-width: 1200px;
@@ -162,7 +163,7 @@ header{
 }
 footer{
     width: 100%;
-    background-color: #3c1364;
+    background-color: #192fac;
     height: 150px;
     bottom: 0;
     display: flex;
@@ -173,7 +174,7 @@ footer{
 .f2{
     position: absolute;
     width: 100%;
-    background-color: #3c1364;
+    background-color: #192fac;
     height: 150px;
     bottom: 0;
 }
@@ -218,7 +219,28 @@ footer{
     padding: 20px;
 }
 .sobre>p{
+    border: 2px solid rgb(182, 179, 179);
+    border-radius: 25px;
+    padding: 10px;
     font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: left;
+}
+.video{
+    justify-content: right;
+    height: 640px ;
+    width: 320;
+}
+.manu{
+    display: flex;
+    margin: 0 auto;
+    justify-content: center;
+    margin-bottom: 25px;
+    margin-top: 25px;
+    align-items: center;
+}
+.tencao{
+    height: 640px;
 }
 
 @media screen and (max-width: 1000px) {
@@ -236,6 +258,9 @@ footer{
     .hamburguer{
         display: block;
         z-index: 999;
+    }
+    .tencao{
+        display: none;
     }
     .menu{
         position: fixed;
