@@ -16,7 +16,7 @@ h1{
     text-align: center;
     padding: 20px 0 20px 0;
     color: #fff;
-    background-color: #192fac;
+    background-color: #14237c;
 }
 main{
     width: 1280px;
@@ -25,7 +25,7 @@ main{
 }
 header{
     width: 100%;
-    background-color: #192fac;
+    background-color: #14237c;
     padding: 10px 20px;
     position: fixed;
     top: 0;
@@ -163,7 +163,7 @@ header{
 }
 footer{
     width: 100%;
-    background-color: #192fac;
+    background-color: #14237c;
     height: 150px;
     bottom: 0;
     display: flex;
@@ -174,7 +174,7 @@ footer{
 .f2{
     position: absolute;
     width: 100%;
-    background-color: #192fac;
+    background-color: #14237c;
     height: 150px;
     bottom: 0;
 }
