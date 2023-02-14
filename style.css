@@ -149,11 +149,8 @@ header{
 .item{
     max-width: 300px;
     min-width: 200px;
-    height: 300px;
     text-align: center;
-    border: 2px solid gray;
-    border-radius: 10px;
-    box-shadow: 0 0 2px;
+    
 }
 .item p{
     padding-top: 20px;
